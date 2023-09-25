@@ -15,12 +15,44 @@ public class Main
       answer = scan.nextLine();
       if (answer.equals("y")) 
       {
+        System.out.println("Does it have round ears? (y/n) ");
+        answer=scan.nextLine();
+        if (answer.equals("y))
+        {
            System.out.println("I guess a dog! Click on run to play again.");
+           answer = scan.nextLine();
+      } 
+      if (answer.equals("n"))
+      {
+        System. out.println("I guess a cat! Click on run to play again.");
       }
-      else 
+      }
+      else {
+        System.out.println("Does it live on land? (y/n)");   
+        answer=scan.nextLine();
+        if (answer.equals("y"))
+        {
+          System.out.println("Does it stand on four legs? (y/n)");
+          answer=scan.nextLine();
+          if (answer.equals("y"))
+          {
+            System.out.println("I guess an elephant! Click on run to play again.");
+          }
+      
+        else {
+          System.out.println("Is it bigger than 20 ft? (y/n)?");
+          answer=scan.nextLine();
+          if (answer.equals("y")){
+            System.out.println("I guess a whale! Click on run to play again.");
+          }
+          else {
+            System.out.println("I guess a dolphin! Click on run to play again.");
+          }
+        }
+             }
       { 
         
-         System.out.println("I guess an elephant! Click on run to play again.");   
+
       }
     }      
     else { // not a mammal
